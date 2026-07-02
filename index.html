@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0612">
+<title>MahyarShop | بازار دیجیتال هخامنشی</title>
+<meta name="description" content="MahyarShop — بازار دیجیتال با طراحی الهام‌گرفته از تخت‌جمشید. سفارش سریع و مستقیم از طریق تلگرام.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════ SVG SPRITE (آیکون‌های قابل استفاده مجدد) ══════════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="capital-glyph" viewBox="0 0 100 70">
+      <rect x="10" y="52" width="80" height="6" rx="3"/>
+      <path d="M50 55 C 30 55, 15 45, 15 30 C 15 18, 25 10, 38 12" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+      <path d="M50 55 C 70 55, 85 45, 85 30 C 85 18, 75 10, 62 12" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="38" cy="12" r="7"/>
+      <circle cx="62" cy="12" r="7"/>
+      <rect x="44" y="55" width="12" height="15"/>
+    </symbol>
+    <symbol id="halo-glyph" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="14" fill="none" stroke="currentColor" stroke-width="3"/>
+      <circle cx="50" cy="50" r="24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+      <g stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="50" y1="4" x2="50" y2="15"/>
+        <line x1="50" y1="85" x2="50" y2="96"/>
+        <line x1="4" y1="50" x2="15" y2="50"/>
+        <line x1="85" y1="50" x2="96" y2="50"/>
+        <line x1="17" y1="17" x2="25" y2="25"/>
+        <line x1="75" y1="75" x2="83" y2="83"/>
+        <line x1="17" y1="83" x2="25" y2="75"/>
+        <line x1="75" y1="25" x2="83" y2="17"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="#top" class="brand">Mahyar<span class="brand-accent">Shop</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="باز و بسته کردن منو" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#products">محصولات</a></li>
+      <li><a href="#about">درباره</a></li>
+      <li><a href="#contact" class="nav-cta">تماس</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="top" class="hero">
+    <svg class="hero-capital hero-capital-start" aria-hidden="true"><use href="#capital-glyph"/></svg>
+    <svg class="hero-capital hero-capital-end" aria-hidden="true"><use href="#capital-glyph"/></svg>
+
+    <div class="hero-content">
+      <svg class="hero-halo" aria-hidden="true"><use href="#halo-glyph"/></svg>
+      <p class="eyebrow">به بازار خوش اومدی</p>
+      <h1 class="hero-title">Mahyar<span class="brand-accent">Shop</span></h1>
+      <p class="hero-tagline">بازار دیجیتال، با روح تخت‌جمشید</p>
+      <a href="#products" class="btn btn-primary">مشاهده محصولات</a>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg class="divider-svg" viewBox="0 0 400 24" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="stairGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="var(--neon-purple)"/>
+          <stop offset="50%" stop-color="var(--neon-pink)"/>
+          <stop offset="100%" stop-color="var(--neon-purple)"/>
+        </linearGradient>
+      </defs>
+      <polyline points="0,24 20,24 20,14 40,14 40,24 60,24 60,14 80,14 80,24 100,24 100,14 120,14 120,24 140,24 140,14 160,14 160,24 180,24 180,14 200,14 200,24 220,24 220,14 240,14 240,24 260,24 260,14 280,14 280,24 300,24 300,14 320,14 320,24 340,24 340,14 360,14 360,24 380,24 380,14 400,14" fill="none" stroke="url(#stairGrad)" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <section id="products" class="products-section">
+    <div class="section-heading">
+      <p class="eyebrow">فروشگاه</p>
+      <h2 class="section-title">محصولات</h2>
+      <p class="section-sub">جدیدترین‌ها رو همینجا پیدا کن — سفارش مستقیم از طریق تلگرام</p>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+      <!-- ═══════════════════════════════════════════════════════
+           این کارت‌ها فقط نمونه/جای‌گذارنده (placeholder) هستن.
+           برای افزودن محصول واقعی، پایین‌تر توی همین فایل
+           راهنمای کامل رو ببین (بخش "افزودن محصول جدید").
+           ═══════════════════════════════════════════════════════ -->
+
+      <article class="product-card">
+        <div class="product-img">
+          <img src="images/product-1.svg" alt="نام محصول ۱" loading="lazy">
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">نام محصول ۱</h3>
+          <p class="product-desc">توضیح کوتاه محصول رو اینجا بنویس.</p>
+          <div class="product-footer">
+            <span class="product-price">۰۰۰٬۰۰۰ <small>تومان</small></span>
+            <a class="btn btn-order" href="https://t.me/uidmahyar?text=%D8%B3%D9%84%D8%A7%D9%85!%20%D9%85%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%85%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%D9%86%D8%A7%D9%85%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%DB%B1%20%D8%B1%D9%88%20%D8%B3%D9%81%D8%A7%D8%B1%D8%B4%20%D8%A8%D8%AF%D9%85." target="_blank" rel="noopener">سفارش در تلگرام</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-img">
+          <img src="images/product-2.svg" alt="نام محصول ۲" loading="lazy">
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">نام محصول ۲</h3>
+          <p class="product-desc">توضیح کوتاه محصول رو اینجا بنویس.</p>
+          <div class="product-footer">
+            <span class="product-price">۰۰۰٬۰۰۰ <small>تومان</small></span>
+            <a class="btn btn-order" href="https://t.me/uidmahyar?text=%D8%B3%D9%84%D8%A7%D9%85!%20%D9%85%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%85%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%D9%86%D8%A7%D9%85%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%DB%B2%20%D8%B1%D9%88%20%D8%B3%D9%81%D8%A7%D8%B1%D8%B4%20%D8%A8%D8%AF%D9%85." target="_blank" rel="noopener">سفارش در تلگرام</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-img">
+          <img src="images/product-3.svg" alt="نام محصول ۳" loading="lazy">
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">نام محصول ۳</h3>
+          <p class="product-desc">توضیح کوتاه محصول رو اینجا بنویس.</p>
+          <div class="product-footer">
+            <span class="product-price">۰۰۰٬۰۰۰ <small>تومان</small></span>
+            <a class="btn btn-order" href="https://t.me/uidmahyar?text=%D8%B3%D9%84%D8%A7%D9%85!%20%D9%85%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%85%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%D9%86%D8%A7%D9%85%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%DB%B3%20%D8%B1%D9%88%20%D8%B3%D9%81%D8%A7%D8%B1%D8%B4%20%D8%A8%D8%AF%D9%85." target="_blank" rel="noopener">سفارش در تلگرام</a>
+          </div>
+        </div>
+      </article>
+
+      <!--
+        ══════════════════════════════════════════════════════════
+        🆕 راهنمای افزودن محصول جدید:
+        ۱) کل بلوک <article class="product-card"> ... </article> رو کپی کن
+           (از یکی از سه کارت بالا)
+        ۲) دقیقاً همینجا، بالای همین کامنت، بچسبونش
+        ۳) این متن‌ها رو با اطلاعات واقعی عوض کن:
+            - نام محصول ۱  →  اسم واقعی محصول
+            - توضیح کوتاه محصول...  →  توضیح واقعی
+            - ۰۰۰٬۰۰۰  →  قیمت واقعی
+            - src="images/product-1.svg"  →  عکس واقعی محصول (پوشه images رو ببین)
+              اگه عکس واقعی نداری فعلاً، همون آدرس SVG رو نگه دار یا از من بخواه یکی برات بسازم
+        ۴) لینک تلگرام (href) رو هم می‌تونی همینطوری نگه داری،
+           چون یوزرنیم تلگرام از پایین صفحه (متغیر عمومی) نمیاد —
+           هر بار که می‌خوای، فقط بخش انتهایی متن پیام (بعد از ?text=)
+           رو عوض کن، یا از من بخواه که برات بسازمش.
+        ══════════════════════════════════════════════════════════
+      -->
+      <!-- 🆕 محصول جدید رو اینجا (بالای همین خط) اضافه کن 🆕 -->
+
+    </div>
+  </section>
+
+  <div class="divider divider-reverse" aria-hidden="true">
+    <svg class="divider-svg" viewBox="0 0 400 24" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="stairGrad2" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="var(--neon-pink)"/>
+          <stop offset="50%" stop-color="var(--neon-purple)"/>
+          <stop offset="100%" stop-color="var(--neon-pink)"/>
+        </linearGradient>
+      </defs>
+      <polyline points="0,24 20,24 20,14 40,14 40,24 60,24 60,14 80,14 80,24 100,24 100,14 120,14 120,24 140,24 140,14 160,14 160,24 180,24 180,14 200,14 200,24 220,24 220,14 240,14 240,24 260,24 260,14 280,14 280,24 300,24 300,14 320,14 320,24 340,24 340,14 360,14 360,24 380,24 380,14 400,14" fill="none" stroke="url(#stairGrad2)" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <section id="about" class="about-section">
+    <div class="about-inner">
+      <svg class="about-icon" aria-hidden="true"><use href="#halo-glyph"/></svg>
+      <h2 class="section-title">درباره‌ی MahyarShop</h2>
+      <p class="about-text">
+        MahyarShop یه بازار دیجیتال کوچیکه که هر بار با یه محصول جدید بزرگ‌تر می‌شه.
+        هر سفارش مستقیم و بی‌واسطه از طریق تلگرام هماهنگ می‌شه — سریع، ساده و شفاف.
+      </p>
+      <ul class="trust-list">
+        <li><svg aria-hidden="true"><use href="#capital-glyph"/></svg>پاسخ‌گویی سریع</li>
+        <li><svg aria-hidden="true"><use href="#capital-glyph"/></svg>معامله مطمئن</li>
+        <li><svg aria-hidden="true"><use href="#capital-glyph"/></svg>پشتیبانی مستقیم در تلگرام</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <svg class="footer-halo" aria-hidden="true"><use href="#halo-glyph"/></svg>
+  <p class="footer-brand">Mahyar<span class="brand-accent">Shop</span></p>
+  <p class="footer-text">برای سفارش یا هر سوالی، پیام بده:</p>
+  <a class="btn btn-primary btn-telegram" href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" rel="noopener">
+    گفتگو در تلگرام
+  </a>
+  <p class="footer-copy">© ۲۰۲۶ MahyarShop — ساخته‌شده با الهام از تخت‌جمشید</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
